@@ -1,0 +1,13 @@
+[2024-05-17 11:22:57,109: INFO/MainProcess] beat: Starting...
+[2024-05-17 11:22:57,140: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:02,137: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:07,137: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:12,137: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:17,137: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:22,137: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:27,138: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:32,138: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:37,138: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:42,138: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:47,138: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)
+[2024-05-17 11:23:52,139: INFO/MainProcess] Scheduler: Sending due task run-task2-every-5-seconds (app.tasks.task2)

@@ -1,0 +1,117 @@
+[2024-05-17 11:22:57,773: WARNING/MainProcess] /home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-05-17 11:22:57,781: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2024-05-17 11:22:57,782: WARNING/MainProcess] /home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-05-17 11:22:57,784: INFO/MainProcess] mingle: searching for neighbors
+[2024-05-17 11:22:58,797: INFO/MainProcess] mingle: all alone
+[2024-05-17 11:22:58,818: INFO/MainProcess] celery@desktop ready.
+[2024-05-17 11:22:58,822: INFO/MainProcess] Task app.tasks.task2[3801f56f-6b7f-4fb6-b134-35c4e98964a6] received
+[2024-05-17 11:22:58,823: INFO/ForkPoolWorker-7] task2 done
+[2024-05-17 11:22:58,824: INFO/ForkPoolWorker-7] Task app.tasks.task2[3801f56f-6b7f-4fb6-b134-35c4e98964a6] succeeded in 0.0012438030007615453s: 'task'
+[2024-05-17 11:23:02,140: INFO/MainProcess] Task app.tasks.task2[5a5e433c-2253-4102-829d-9bd2effbc3ce] received
+[2024-05-17 11:23:02,142: INFO/ForkPoolWorker-7] task2 done
+[2024-05-17 11:23:02,142: INFO/ForkPoolWorker-7] Task app.tasks.task2[5a5e433c-2253-4102-829d-9bd2effbc3ce] succeeded in 0.0006832550006947713s: 'task'
+[2024-05-17 11:23:07,139: INFO/MainProcess] Task app.tasks.task2[fd088993-102d-4b43-9586-e2f9599a57f1] received
+[2024-05-17 11:23:07,140: INFO/ForkPoolWorker-7] task2 done
+[2024-05-17 11:23:07,140: INFO/ForkPoolWorker-7] Task app.tasks.task2[fd088993-102d-4b43-9586-e2f9599a57f1] succeeded in 0.00033941199944820255s: 'task'
+[2024-05-17 11:23:09,176: INFO/MainProcess] Task app.tasks.update_sims[fa2820c1-fb8e-4098-b6ce-ac91133d1483] received
+[2024-05-17 11:23:12,143: INFO/MainProcess] Task app.tasks.task2[ec6131b6-3a7b-45de-affc-7a89bfde8353] received
+[2024-05-17 11:23:12,147: INFO/ForkPoolWorker-8] task2 done
+[2024-05-17 11:23:12,149: INFO/ForkPoolWorker-8] Task app.tasks.task2[ec6131b6-3a7b-45de-affc-7a89bfde8353] succeeded in 0.00346968600024411s: 'task'
+[2024-05-17 11:23:17,143: INFO/MainProcess] Task app.tasks.task2[c18fa82c-4362-421e-8049-d513e4469d04] received
+[2024-05-17 11:23:17,146: INFO/ForkPoolWorker-8] task2 done
+[2024-05-17 11:23:17,147: INFO/ForkPoolWorker-8] Task app.tasks.task2[c18fa82c-4362-421e-8049-d513e4469d04] succeeded in 0.0013692060001631035s: 'task'
+[2024-05-17 11:23:22,143: INFO/MainProcess] Task app.tasks.task2[6d46e169-abfd-423a-ba9b-732877080ee2] received
+[2024-05-17 11:23:22,146: INFO/ForkPoolWorker-8] task2 done
+[2024-05-17 11:23:22,146: INFO/ForkPoolWorker-8] Task app.tasks.task2[6d46e169-abfd-423a-ba9b-732877080ee2] succeeded in 0.0008420880003541242s: 'task'
+[2024-05-17 11:23:27,143: INFO/MainProcess] Task app.tasks.task2[672cf72c-c1bd-4c08-a089-9a17f6e6ea3a] received
+[2024-05-17 11:23:27,145: INFO/ForkPoolWorker-8] task2 done
+[2024-05-17 11:23:27,146: INFO/ForkPoolWorker-8] Task app.tasks.task2[672cf72c-c1bd-4c08-a089-9a17f6e6ea3a] succeeded in 0.0008921389999159146s: 'task'
+[2024-05-17 11:23:32,144: INFO/MainProcess] Task app.tasks.task2[7f941957-71a5-43f5-a4c0-571311257788] received
+[2024-05-17 11:23:32,147: INFO/ForkPoolWorker-8] task2 done
+[2024-05-17 11:23:32,148: INFO/ForkPoolWorker-8] Task app.tasks.task2[7f941957-71a5-43f5-a4c0-571311257788] succeeded in 0.0009759919994394295s: 'task'
+[2024-05-17 11:23:37,144: INFO/MainProcess] Task app.tasks.task2[d9b1ddfc-8ddc-4d80-9ff3-14b7034cdd4d] received
+[2024-05-17 11:23:37,147: INFO/ForkPoolWorker-8] task2 done
+[2024-05-17 11:23:37,148: INFO/ForkPoolWorker-8] Task app.tasks.task2[d9b1ddfc-8ddc-4d80-9ff3-14b7034cdd4d] succeeded in 0.001142561999586178s: 'task'
+[2024-05-17 11:23:42,144: INFO/MainProcess] Task app.tasks.task2[e8e8d077-7011-44b0-b5fb-45d80253f121] received
+[2024-05-17 11:23:42,147: INFO/ForkPoolWorker-8] task2 done
+[2024-05-17 11:23:42,148: INFO/ForkPoolWorker-8] Task app.tasks.task2[e8e8d077-7011-44b0-b5fb-45d80253f121] succeeded in 0.0009349660003863391s: 'task'
+[2024-05-17 11:23:47,144: INFO/MainProcess] Task app.tasks.task2[11b63e09-6776-4a65-9a81-56fa597eaaea] received
+[2024-05-17 11:23:47,146: INFO/ForkPoolWorker-8] task2 done
+[2024-05-17 11:23:47,147: INFO/ForkPoolWorker-8] Task app.tasks.task2[11b63e09-6776-4a65-9a81-56fa597eaaea] succeeded in 0.0011489899998196051s: 'task'
+[2024-05-17 11:23:52,145: INFO/MainProcess] Task app.tasks.task2[f86d935b-0f8c-4034-af8b-91d5504cb57a] received
+[2024-05-17 11:23:52,148: INFO/ForkPoolWorker-8] task2 done
+[2024-05-17 11:23:52,148: INFO/ForkPoolWorker-8] Task app.tasks.task2[f86d935b-0f8c-4034-af8b-91d5504cb57a] succeeded in 0.0009576849997756653s: 'task'
+[2024-05-17 11:25:23,497: ERROR/ForkPoolWorker-7] Task app.tasks.update_sims[fa2820c1-fb8e-4098-b6ce-ac91133d1483] raised unexpected: ConnectTimeout(MaxRetryError("HTTPConnectionPool(host='10.40.1.50', port=18000): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x77ff6ac5c7c0>, 'Connection to 10.40.1.50 timed out. (connect timeout=None)'))"))
+Traceback (most recent call last):
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/connection.py", line 400, in request
+    self.endheaders()
+  File "/usr/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/connection.py", line 238, in connect
+    self.sock = self._new_conn()
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x77ff6ac5c7c0>, 'Connection to 10.40.1.50 timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='10.40.1.50', port=18000): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x77ff6ac5c7c0>, 'Connection to 10.40.1.50 timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/app/extensions.py", line 29, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/app/tasks.py", line 52, in update_sims
+    sim_data = sim_app.get_sims()
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/app/tasks.py", line 32, in get_sims
+    sim_data = self.request(method='post', endpoint='', body=body)
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/app/tasks.py", line 38, in request
+    response: requests.Response = getattr(self.session, method)(url=f'{BASE_URL}/{endpoint}', params=params, json=body)
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwdev22/programming/globtel/python/simapp/saconnector/venv/lib/python3.10/site-packages/requests/adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='10.40.1.50', port=18000): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x77ff6ac5c7c0>, 'Connection to 10.40.1.50 timed out. (connect timeout=None)'))

@@ -1,0 +1,93 @@
+#!/bin/bash
+
+# cd dir and start virtualenv
+cd "$(dirname "$0")"
+source "venv/bin/activate"
+
+APP_DIR=$PWD
+FLASK_PID_FILE="$APP_DIR/log/run/flask_pid.log"
+CELERY_WORKER_PID_FILE="$APP_DIR/log/run/celery_worker_pid.log"
+CELERY_BEAT_PID_FILE="$APP_DIR/log/run/celery_beat_pid.log"
+CELERY_WORKER_LOG_FILE="$APP_DIR/log/celery/celery_worker.log"
+CELERY_BEAT_LOG_FILE="$APP_DIR/log/celery/celery_beat.log"
+
+LOG_DIR="$APP_DIR/log"
+
+clear_log_files() {
+    echo "clearing all log files in $LOG_DIR..."
+    find "$LOG_DIR" -type f -exec rm -f {} \;
+    echo "log files cleared."
+}
+
+start_app() {
+    echo "starting Flask app..."
+    export FLASK_APP=app:create_app
+    export FLASK_ENV=development
+    flask run &
+    FLASK_PID=$!
+    echo $FLASK_PID > $FLASK_PID_FILE
+    echo "flask app started with PID $FLASK_PID"
+
+    # start Celery worker
+    echo "starting Celery worker..."
+    celery -A app.make_celery worker --loglevel=INFO --logfile="$CELERY_WORKER_LOG_FILE" --detach
+    CELERY_WORKER_PID=$(pgrep -f 'celery worker')
+    echo $CELERY_WORKER_PID > $CELERY_WORKER_PID_FILE
+    echo "celery worker started with PID $CELERY_WORKER_PID"
+
+    # start Celery beat
+    echo "starting Celery beat..."
+    celery -A app.make_celery beat --loglevel=INFO --logfile="$CELERY_BEAT_LOG_FILE" --detach
+    CELERY_BEAT_PID=$(pgrep -f 'celery beat')
+    echo $CELERY_BEAT_PID > $CELERY_BEAT_PID_FILE
+    echo "celery beat started with PID $CELERY_BEAT_PID"
+}
+
+stop_app() {
+    # stop flask app, pid file being created on application start
+    if [ -f $FLASK_PID_FILE ]; then
+        FLASK_PID=$(cat $FLASK_PID_FILE)
+        echo "stopping Flask app with PID $FLASK_PID..."
+        kill $FLASK_PID
+        rm $FLASK_PID_FILE
+        echo "flask app stopped."
+    else
+        echo "flask PID file not found."
+    fi
+
+    # stop celery worker, same situation as in flask app
+    if [ -f $CELERY_WORKER_PID_FILE ]; then
+        CELERY_WORKER_PID=$(cat $CELERY_WORKER_PID_FILE)
+        echo "stopping Celery worker with PID $CELERY_WORKER_PID..."
+        kill $CELERY_WORKER_PID
+        rm $CELERY_WORKER_PID_FILE
+        echo "celery worker stopped."
+    else
+        echo "celery worker PID file not found."
+    fi
+
+    # stop celery beat
+    if [ -f $CELERY_BEAT_PID_FILE ]; then
+        CELERY_BEAT_PID=$(cat $CELERY_BEAT_PID_FILE)
+        echo "stopping Celery beat with PID $CELERY_BEAT_PID..."
+        kill $CELERY_BEAT_PID
+        rm $CELERY_BEAT_PID_FILE
+        echo "celery beat stopped."
+    else
+        echo "celery beat PID file not found."
+    fi
+}
+
+echo "choose an option:"
+echo "1. start app"
+echo "2. stop app"
+read -p "enter choice [1 or 2]: " choice
+
+if [ "$choice" -eq 1 ]; then
+    clear_log_files
+    start_app
+elif [ "$choice" -eq 2 ]; then
+    stop_app
+else
+    echo "Invalid choice. Exiting."
+fi
